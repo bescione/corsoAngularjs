@@ -1,0 +1,21 @@
+[
+	{
+		"id"			: 1,
+		"avversario"	: "Juve",
+		"risultato"		: "3-1",
+		"posizione"		: "trasferta",
+		"marcatori"		: [{
+			"nome" 		: "Higuain",
+			"squadra"	: "Juventus"
+			}, {
+			"nome"		: "Higuain",
+			"squadra"	: "Juventus"
+			}, {
+			"nome"		: "Pjanic",
+			"squadra"	: "Juventus"
+			}, {
+			"nome"		: "Antei",
+			"squadra"	: "Sassuolo"
+			}]
+	}
+]

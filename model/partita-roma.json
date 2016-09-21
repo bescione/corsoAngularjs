@@ -1,0 +1,18 @@
+[
+	{
+		"id"			: 2,
+		"avversario"	: "Juve",
+		"risultato"		: "3-0",
+		"posizione"		: "casa",
+		"marcatori"		: [{
+			"nome" 		: "Salah",
+			"squadra"	: "Roma"
+			}, {
+			"nome"		: "Dzeko",
+			"squadra"	: "Roma"
+			}, {
+			"nome"		: "Dzeko",
+			"squadra"	: "Roma"
+			}]
+	}
+]

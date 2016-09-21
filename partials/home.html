@@ -1,0 +1,22 @@
+<!-- tabella con nomi squadre -->
+<div class="row">
+	<div class="col-md-12">
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Squadra</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="squadra in squadre">
+					<td>
+						<logo img="squadra" grandezza="imgsmall"></logo>
+						<a ng-href="#/{{squadra}}">
+							{{ squadra }}
+						</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>	
+</div>

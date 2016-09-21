@@ -1,0 +1,66 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="col-md-4">
+			<logo img="squadra" grandezza="imgbig"></logo>
+		</div>
+		<div class="col-md-6">
+			<h1>{{ squadra }}</h1>
+		</div>
+		<div class="col-md-2">
+			<a ng-href="#/">
+				<- Indietro
+			</a>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<!-- breadcrumbs -->
+		<!-- informazioni prese da un json, attraverso un servizio -->
+		<div class="col-md-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title">Allenatore</h2>
+				</div>
+				<div class="panel-body">
+					<div class="col-md-3">
+						<img class="img img-responsive" src="{{dettagli.fotoAllenatore}}">
+					</div>
+					<div class="col-md-9">
+						<h3>{{dettagli.allenatore}}</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title">Informazioni</h2>
+				</div>
+				<div class="panel-body">
+					<p><strong>Fondazione: </strong>{{dettagli.fondazione | date }}</p>
+					<p><strong>Città: </strong>{{dettagli.citta }}</p>
+					<p><strong>Sede: </strong>{{dettagli.sedePartite }}</p>
+					<p><strong>Proprietario: </strong>{{dettagli.proprietario }}</p>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<div class="row">
+	<div class="col-md-12 risultati" ng-repeat="partita in partite">
+		<div class="col-md-5">
+			<span class="pull-right" ng-if="partita.posizione == 'casa'"><logo img="squadra" grandezza="imgsmall"></logo><strong>{{ squadra }}</strong></span>
+			<span class="pull-right" ng-if="partita.posizione != 'casa'"><logo img="partita.avversario" grandezza="imgsmall"></logo><strong>{{ partita.avversario }}</strong></span>
+		</div>
+		<div class="col-md-2">
+			<p class="text-center top10">{{ partita.risultato }}</p>
+		</div>
+		<div class="col-md-5">
+			<span ng-if="partita.posizione == 'casa'"><strong>{{ partita.avversario }}</strong><logo img="partita.avversario" grandezza="imgsmall"></logo></span>
+			<span ng-if="partita.posizione != 'casa'"><strong>{{ squadra }}</strong><logo img="squadra" grandezza="imgsmall"></logo></span>
+	</div>
+</div>
+

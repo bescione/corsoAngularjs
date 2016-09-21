@@ -1,0 +1,37 @@
+[
+	{
+		"id"			: 1,
+		"avversario"	: "Sassuolo",
+		"risultato"		: "3-1",
+		"posizione"		: "casa",
+		"marcatori"		: [{
+			"nome" 		: "Higuain",
+			"squadra"	: "Juventus"
+			}, {
+			"nome"		: "Higuain",
+			"squadra"	: "Juventus"
+			}, {
+			"nome"		: "Pjanic",
+			"squadra"	: "Juventus"
+			}, {
+			"nome"		: "Antei",
+			"squadra"	: "Sassuolo"
+			}]
+	},
+	{
+		"id"			: 2,
+		"avversario"	: "Roma",
+		"risultato"		: "3-0",
+		"posizione"		: "trasferta",
+		"marcatori"		: [{
+			"nome" 		: "Salah",
+			"squadra"	: "Roma"
+			}, {
+			"nome"		: "Dzeko",
+			"squadra"	: "Roma"
+			}, {
+			"nome"		: "Dzeko",
+			"squadra"	: "Roma"
+			}]
+	}
+]
